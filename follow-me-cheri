@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const followMe = require('./lib/follow-me')
+
+program
+  .version('0.1.0', 'Café chéri')
+  .option('-a, --account [value]', 'Account')
+  .option('-p, --password [value]', 'Password')
+  .parse(process.argv);
+
+async function init() {
+    if(program.account && program.password) {
+        return await followMe.followOrder(program.account, program.password)
+    }
+}
+
+init()

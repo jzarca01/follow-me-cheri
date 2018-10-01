@@ -1,0 +1,16 @@
+{
+  "name": "follow-me-cheri",
+  "version": "1.0.0",
+  "description": "CLI Tool to fetch order state @ Foodcheri",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeremie Zarca <jeremie.zarca@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.18.0",
+    "node-foodcheri": "^1.0.2",
+    "pushover-notifications": "^1.0.0"
+  }
+}
