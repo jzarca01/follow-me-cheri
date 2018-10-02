@@ -8,5 +8,5 @@ CLI Tool to fetch order state @ Foodcheri
 
 ## Usage
 ```bash
-follow-me-cheri -a youremail@account.com -p yourpassword
+follow-me-cheri --account youremail@account.com (--password yourpassword)
 ```
