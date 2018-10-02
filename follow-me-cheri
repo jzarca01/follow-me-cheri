@@ -3,10 +3,12 @@
 const program = require('commander');
 const followMe = require('./lib/follow-me')
 
+const config = require('./config/config.json')
+
 program
   .version('0.1.0', 'Café chéri')
   .option('-a, --account [value]', 'Account')
-  .option('-p, --password [value]', 'Password')
+  .option('-p, --password [value]', 'Password', config.password)
   .parse(process.argv);
 
 async function init() {

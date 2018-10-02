@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.18.0",
+    "moment": "^2.22.2",
     "node-foodcheri": "^1.0.2",
     "pushover-notifications": "^1.0.0"
   }
