@@ -1,6 +1,6 @@
 {
   "name": "follow-me-cheri",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CLI Tool to fetch order state @ Foodcheri",
   "main": "",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "commander": "^2.18.0",
     "moment": "^2.22.2",
-    "node-foodcheri": "^1.0.2",
+    "node-foodcheri": "^1.0.3",
     "pushover-notifications": "^1.0.0"
   }
 }
