@@ -10,8 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.18.0",
+    "faker": "^4.1.0",
     "moment": "^2.22.2",
-    "node-foodcheri": "^1.0.3",
+    "node-foodcheri": "^1.0.5",
     "pushover-notifications": "^1.0.0"
   }
 }
