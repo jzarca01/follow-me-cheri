@@ -8,7 +8,8 @@ const config = require('./config/config.json')
 program
     .version('0.1.0', 'Café chéri')
     .option('-a, --account [value]', 'Account')
-    .option('-n --new', 'Create account')
+    .option('-n, --new', 'Create account')
+    .option('--name [value]', 'Specify name')
     .option('-p, --password [value]', 'Password', config.password)
     .parse(process.argv);
 
@@ -16,7 +17,9 @@ async function init() {
     if (program.account && program.password) {
         return await followMe.followOrder(program.account, program.password)
     } else if (program.new && program.password) {
-        const user = await followMe.createAccount(program.password)
+        const user = program.name ?
+            await followMe.createAccount(program.password, program.name) :
+            await followMe.createAccount(program.password)
         console.log(user)
         return user
     }
