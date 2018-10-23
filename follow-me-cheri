@@ -18,13 +18,8 @@ async function init() {
         return await followMe.followOrder(program.account, program.password)
     } else if (program.new && program.password) {
         const user = program.name ?
-<<<<<<< HEAD
             await followMe.createAccount(program.password, program.name) :
             await followMe.createAccount(program.password)
-=======
-            await followMe.createAccount(program.password) :
-            await followMe.createAccount(program.password, program.name)
->>>>>>> c54b098182dda7438849ddb5208c2a23be5428f2
         console.log(user)
         return user
     }
